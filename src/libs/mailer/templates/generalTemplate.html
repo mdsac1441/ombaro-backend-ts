@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>%SUBJECT%</title>
+    <style type="text/css">
+      /* Fonts */
+      @import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700|Open+Sans:300,400,600,700');
+
+      /* Dark theme config */
+      :root {
+        --background: #181A20;
+        --card-bg: #1F2229;
+        --border: #2C2F36;
+        --text: #ffffff;
+        --muted: #aaaaaa;
+        --accent: #595acc;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: var(--background);
+        font-family: 'Open Sans', sans-serif;
+        color: var(--text);
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline !important;
+      }
+
+      .card {
+        max-width: 670px;
+        background: var(--card-bg);
+        border-radius: 10px;
+        border: 1px solid var(--border);
+      }
+
+      h1 {
+        color: var(--text);
+        font-weight: 500;
+        margin: 0;
+        font-size: 28px;
+        font-family: 'Rubik', sans-serif;
+      }
+
+      .divider {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 25px 0;
+        border-bottom: 1px solid var(--border);
+        width: 100px;
+      }
+
+      .footer {
+        font-size: 14px;
+        color: var(--muted);
+        line-height: 18px;
+      }
+    </style>
+  </head>
+  <body style="margin:0; background-color: var(--background);">
+    <!--100% body table-->
+    <table cellspacing="0" border="0" cellpadding="0" width="100%" bgcolor="#181A20" style="font-family: 'Open Sans', sans-serif;">
+      <tr>
+        <td>
+          <table style="max-width:670px; margin:0 auto;" width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="height:60px;">&nbsp;</td>
+            </tr>
+            <!-- Header / Logo -->
+            <tr>
+              <td style="text-align:center;">
+                <a href="%SITE_URL%" title="logo" target="_blank">%HEADER%</a>
+              </td>
+            </tr>
+            <tr>
+              <td style="height:20px;">&nbsp;</td>
+            </tr>
+            <!-- Card -->
+            <tr>
+              <td>
+                <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0" class="card">
+                  <tr>
+                    <td style="height:40px;">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td style="padding:0 35px;">
+                      <h1>%SUBJECT%</h1>
+                      <span class="divider"></span>
+                      <div style="font-size:15px; line-height:1.6; color:var(--text);">
+                        %MESSAGE%
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="height:40px;">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- Footer -->
+            <tr>
+              <td style="height:20px;">&nbsp;</td>
+            </tr>
+            <tr>
+              <td style="text-align:center;" class="footer">
+                <p>&copy; %YEAR% <strong>%FOOTER%</strong> — All rights reserved.</p>
+                <p>Visit us at <a href="%SITE_URL%" target="_blank">%SITE_URL%</a></p>
+              </td>
+            </tr>
+            <tr>
+              <td style="height:60px;">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

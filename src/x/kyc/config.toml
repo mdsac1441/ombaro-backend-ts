@@ -1,0 +1,8 @@
+
+[service]
+enabled = false
+port = 5006
+host = "loclahost"
+
+[database]
+shared = false  # Set to true if using monolith DB

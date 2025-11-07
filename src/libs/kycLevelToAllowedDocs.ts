@@ -1,0 +1,22 @@
+export const TierToAllowedDocs = {
+  TIER_0: [],
+
+  TIER_1: ["PASSPORT", "ID_CARD", "NATIONAL_ID", "DRIVING_LICENSE","PAN_CARD", "VOTER_ID"],
+  
+  TIER_2: [
+    "UTILITY_BILL",
+    "BANK_STATEMENT",
+    "PAYSLIP",
+    "TAX_DOCUMENT",
+    "PROOF_OF_ADDRESS",
+    "PROOF_OF_INCOME",
+  ],
+  
+  TIER_3: [
+    "BUSINESS_LICENSE",
+    "CERTIFICATE_OF_INCORPORATION",
+    "ARTICLES_OF_ASSOCIATION",
+    "PROOF_OF_ADDRESS",
+    "BENEFICIAL_OWNER_ID",
+  ],
+};
