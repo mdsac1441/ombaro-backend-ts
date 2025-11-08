@@ -81,6 +81,10 @@ postgres-docker:
 	@echo "Running PostgreSQL container..."
 	docker-compose -f docker-compose/services/docker-compose-postgres.yml up -d
 
+redis-docker:
+	@echo "Running PostgreSQL container..."
+	docker-compose -f docker-compose/services/docker-compose-redis.yml up -d
+
 	
 # --- Clean ---
 clean:
